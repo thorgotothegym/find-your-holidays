@@ -21,8 +21,11 @@ jobs:
           node-version-file: .nvmrc
           cache: "pnpm"
 
-      - name: Install pnpm
-        run: npm install -g pnpm
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: .nvmrc
+          run_install: false
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
