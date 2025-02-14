@@ -13,7 +13,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0
+          fetch-depth: 0 #
 
       - name: Setup Node.js (from .nvmrc)
         uses: actions/setup-node@v3
@@ -21,11 +21,11 @@ jobs:
           node-version-file: .nvmrc
           cache: "pnpm"
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: .nvmrc
-          run_install: false
+      - name: Install pnpm manually
+        run: |
+          corepack enable
+          corepack prepare pnpm@latest --activate
+          pnpm --version
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
