@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/thorgotothegym/find-your-holidays/compare/v1.0.0...v1.1.0) (2025-02-17)
+
+
+### Features
+
+* add Tailwind CSS and PostCSS configuration files ([e102d20](https://github.com/thorgotothegym/find-your-holidays/commit/e102d20f11b9789a2167594c994f69634c9dd998))
+* update Tailwind CSS configuration and enhance styling with custom CSS variables ([debdce3](https://github.com/thorgotothegym/find-your-holidays/commit/debdce3fa58ae6dacb69c66c674aaefaf5f1a13c))
+
 # 1.0.0 (2025-02-17)
 
 
