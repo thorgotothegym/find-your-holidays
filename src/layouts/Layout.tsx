@@ -1,17 +1,15 @@
-import { ReactNode } from "react";
+import { AppSidebar } from "@/components/ui/app-sidebar"
+import { Input } from "@/components/ui/input"
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 
-type Layout = {
-  children: ReactNode;
-};
-
-export const Layout = ({ children }: Layout) => {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="relative flex min-h-svh flex-col bg-current text-foreground">
-      {/* Sidebar */}
-      <aside className="w-60 p-4 text-white">
-        <nav></nav>
-      </aside>
-      <main className="flex-1 p-6 bg-gray-100">{children}</main>
-    </div>
-  );
-};
+    <SidebarProvider>
+      <AppSidebar />
+      <main>
+        <SidebarTrigger />
+        {children}
+      </main>
+    </SidebarProvider>
+  )
+}

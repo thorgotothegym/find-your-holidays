@@ -1,5 +1,5 @@
 import { Route, Switch } from "wouter";
-import { Layout } from "@/layouts/Layout";
+import Layout from "@/layouts/Layout";
 import { SearchEngine } from "@/pages/SearchEngine";
 
 export const Routes = () => {
