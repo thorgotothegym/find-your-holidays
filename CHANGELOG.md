@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/thorgotothegym/find-your-holidays/compare/v1.1.0...v1.2.0) (2025-02-25)
+
+
+### Features
+
+* add Prettier configuration and update ESLint ignore patterns ([81767e8](https://github.com/thorgotothegym/find-your-holidays/commit/81767e8f6cb9a6fec0515003392bb9d2bb4c705b))
+* **package:** fix versions ([7bfdcf4](https://github.com/thorgotothegym/find-your-holidays/commit/7bfdcf4fee89c9ebcbdffe4552ef7eedb71e1248))
+
 # [1.1.0](https://github.com/thorgotothegym/find-your-holidays/compare/v1.0.0...v1.1.0) (2025-02-17)
 
 
